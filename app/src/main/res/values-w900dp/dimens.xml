@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="error_text_size">30sp</dimen>
+
+    <dimen name="list_item_text_size">18sp</dimen>
+
+    <dimen name="breed_detail_primary_text_size">20sp</dimen>
+    <dimen name="breed_detail_secondary_text_size">18sp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="PrimaryText">
+        <item name="android:textSize">@dimen/breed_detail_primary_text_size</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textSize">@dimen/breed_detail_secondary_text_size</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="WindowAnimationTransition">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_offscreen_to_screen</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_screen_to_left_offscreen</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_from_left_offscreen_to_screen</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_screen_to_right_offscreen</item>
+    </style>
+
+</resources>

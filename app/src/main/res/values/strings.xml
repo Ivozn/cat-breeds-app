@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cat Breeds App</string>
+
+    <string name="default_error_message">Something went wrong\nClick here to try again</string>
+
+    <!--    Cat Breed List Activity Texts   -->
+    <string name="cat_breeds">Cat Breeds</string>
+    <string name="main_screen_tablet_choose_breed_text">Choose a breed to see more info about it</string>
+    <string name="breed_item_list_name_helper_text">Cat Breed Name</string>
+
+    <!--    Cat Breed Detail Screen Texts   -->
+    <string name="breed_detail_origin_title">Origin:</string>
+    <string name="breed_detail_temperament_title">Temperament:</string>
+    <string name="breed_detail_description_title">Description:</string>
+
+    <string name="breed_detail_name_helper_text">Breed Name</string>
+    <string name="breed_detail_country_helper_text">Country</string>
+    <string name="breed_detail_temperament_helper_text">Active, Energetic, Independent, Intelligent, Gentle</string>
+    <string name="breed_detail_description_helper_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+    <!--    Content Description Texts   -->
+    <string name="cat_breed_detail_image_content_description">Image of a cat</string>
+    <string name="error_image_content_description">Image of a dissatisfied smile</string>
+    <string name="breed_item_list_arrow_content_description">Arrow pointing to the right</string>
+
+</resources>

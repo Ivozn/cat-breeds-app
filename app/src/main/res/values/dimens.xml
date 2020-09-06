@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_view_width">250dp</dimen>
+    <dimen name="error_text_size">20sp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="error_message_padding">25dp</dimen>
+
+    <dimen name="list_item_text_size">16sp</dimen>
+    <dimen name="default_arrow_margin_side">10dp</dimen>
+
+    <!--  Cat Breeds List Screen   -->
+    <dimen name="main_screen_phone_list_top_margin">20dp</dimen>
+    <dimen name="main_screen_title_text_size">30sp</dimen>
+    <dimen name="main_screen_title_vertical_padding">40dp</dimen>
+    <dimen name="main_screen_arc_height">120dp</dimen>
+    <dimen name="main_screen_info_text_size">30sp</dimen>
+    <dimen name="main_screen_frame_start_margin">10dp</dimen>
+
+    <!--  Cat Breed Detail Screen -->
+    <dimen name="breed_detail_title_text_size">25sp</dimen>
+    <dimen name="breed_detail_primary_text_size">18sp</dimen>
+    <dimen name="breed_detail_secondary_text_size">16sp</dimen>
+    <dimen name="breed_detail_title_margin_top">15dp</dimen>
+    <dimen name="breed_detail_message_title_distance">5dp</dimen>
+    <dimen name="breed_detail_image_bottom_margin">10dp</dimen>
+    <dimen name="breed_detail_description_bottom_margin">20dp</dimen>
+    <dimen name="breed_detail_color_below_toolbar_heigth">90dp</dimen>
+    <dimen name="breed_detail_semi_circle_top_margin">20dp</dimen>
+    <dimen name="breed_detail_semi_circle_heigth">100dp</dimen>
+
+</resources>
