@@ -1,6 +1,6 @@
 # Cat Breeds App
 
-This is a simple Master/detail app that uses the [theCatApi] to show a list of cat breeds, and when clicked, will show the details of that breed.
+This is a simple Master/Detail app that uses the [theCatApi] to show a list of cat breeds, and when clicked, will show the details of that breed.
 
 
 
@@ -22,7 +22,7 @@ This is a simple Master/detail app that uses the [theCatApi] to show a list of c
 
 ---
 ### Architecture
-This project has been developed using a MVVM architecture and a Repository pattern, but in this case, only the Remote Data Source was used.
+This project was developed using a MVVM architecture and a Repository pattern, but in this case, only the Remote Data Source was used.
 
 ![MVVM Architecture image](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
