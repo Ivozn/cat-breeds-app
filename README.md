@@ -3,7 +3,7 @@
 This is a simple Master/detail app that uses the [theCatApi] to show a list of cat breeds, and when clicked, will show the details of that breed.
 
 
----
+
 ### Tech
 * [Kotlin]
 * MVVM Architecture
@@ -23,6 +23,7 @@ This is a simple Master/detail app that uses the [theCatApi] to show a list of c
 ---
 ### Architecture
 This project has been developed using a MVVM architecture and a Repository pattern, but in this case, only the Remote Data Source was used.
+
 ![MVVM Architecture image](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
 
