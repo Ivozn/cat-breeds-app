@@ -19,7 +19,7 @@ class CatBreedDetailActivity : AppCompatActivity() {
 
     private fun setupFragment(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
-            val fragment = CatBreedDetailFragment().apply {
+            var fragment = CatBreedDetailFragment().apply {
                 arguments = Bundle().apply {
                     putParcelable(
                         CatBreedDetailFragment.ARG_CAT_BREED,
@@ -33,3 +33,5 @@ class CatBreedDetailActivity : AppCompatActivity() {
         }
     }
 }
+
+
