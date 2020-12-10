@@ -1,0 +1,39 @@
+configurations {
+    ktlint
+    detekt
+}
+
+dependencies {
+    ktlint "com.pinterest:ktlint:0.40.0"
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.15.0-RC1"
+}
+
+task ktlint(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code style."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    ignoreExitValue = true
+    args "src/**/*.kt"
+}
+check.dependsOn ktlint
+
+task ktlintFormat(type: JavaExec, group: "formatting") {
+    description = "Fix Kotlin code style deviations."
+    classpath = configurations.ktlint
+    main = "com.pinterest.ktlint.Main"
+    args "-F", "src/**/*.kt"
+}
+
+task detektVerification(type: JavaExec, group: "verification") {
+    description = "Check Kotlin code smells, code complexity based on detekt-config.yml."
+
+    main = "io.gitlab.arturbosch.detekt.cli.Main"
+    classpath = configurations.detekt
+    ignoreExitValue = true
+    def input = "$projectDir"
+    def dir = "$rootDir"
+    def config = "$dir/detekt-config.yml"
+    def report = "xml:$buildDir/reports/detekt/detekt-checkstyle.xml"
+    def params = ["-i", input, "-c", config, "-r", report]
+    args(params)
+}
