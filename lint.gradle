@@ -12,7 +12,7 @@ task ktlint(type: JavaExec, group: "verification") {
     description = "Check Kotlin code style."
     classpath = configurations.ktlint
     main = "com.pinterest.ktlint.Main"
-    args "src/**/*.kt", "--reporter=plain", "--reporter=checkstyle,output=${buildDir}/reports/ktlint/ktlint-checkstyle.xml"
+    args "src/**/*.kt", "--reporter=checkstyle,output=${buildDir}/reports/ktlint/ktlint-checkstyle.xml"
 
     ignoreExitValue = true
 }

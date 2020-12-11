@@ -7,7 +7,6 @@ import com.ivonicchio.catbreedsapp.R
 import com.ivonicchio.catbreedsapp.databinding.ActivityCatBreedDetailBinding
 
 class CatBreedDetailActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityCatBreedDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
