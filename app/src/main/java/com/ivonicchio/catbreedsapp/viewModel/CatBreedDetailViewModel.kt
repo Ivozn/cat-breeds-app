@@ -17,6 +17,7 @@ class CatBreedDetailViewModel(
     private val catsRepository: CatsRepository,
     val catBreed: CatBreed,
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
+
 ) : ViewModel() {
 
     companion object {
@@ -54,4 +55,7 @@ class CatBreedDetailViewModel(
     fun clearRequestErrorEvent() {
         _requestError.value = false
     }
+
+
+    
 }
