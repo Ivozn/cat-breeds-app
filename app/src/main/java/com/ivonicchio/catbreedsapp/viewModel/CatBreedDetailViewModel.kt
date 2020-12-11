@@ -36,7 +36,7 @@ class CatBreedDetailViewModel(
 
     fun getCatBreedImage() {
         viewModelScope.launch(dispatcher) {
-            val response = catsRepository.getCatBreedImage(catBreed.id)
+            var response = catsRepository.getCatBreedImage(catBreed.id)
 
             when (response.status) {
                 SUCCESS -> {
