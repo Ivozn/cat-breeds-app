@@ -7,7 +7,6 @@ import com.ivonicchio.catbreedsapp.R
 import com.ivonicchio.catbreedsapp.databinding.ActivityCatBreedDetailBinding
 
 class CatBreedDetailActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityCatBreedDetailBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class CatBreedDetailActivity : AppCompatActivity() {
 
     private fun setupFragment(savedInstanceState: Bundle?) {
         if (savedInstanceState == null) {
-            val fragment = CatBreedDetailFragment().apply {
+            var fragment = CatBreedDetailFragment().apply {
                 arguments = Bundle().apply {
                     putParcelable(
                         CatBreedDetailFragment.ARG_CAT_BREED,
@@ -27,9 +26,12 @@ class CatBreedDetailActivity : AppCompatActivity() {
                     )
                 }
             }
+                
             supportFragmentManager.beginTransaction()
                 .add(R.id.item_detail_container, fragment)
                 .commit()
         }
     }
 }
+
+
