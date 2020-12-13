@@ -1,7 +1,6 @@
 github.dismiss_out_of_range_messages
 
 kotlin_detekt.report_file = "app/build/reports/detekt/detekt-checkstyle.xml"
-kotlin_detekt.detekt(inline_mode: true)
 
 checkstyle_format.base_path = Dir.pwd
 checkstyle_format.report 'app/build/reports/ktlint/ktlint-checkstyle.xml'
