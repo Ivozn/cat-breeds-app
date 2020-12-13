@@ -55,7 +55,4 @@ class CatBreedDetailViewModel(
     fun clearRequestErrorEvent() {
         _requestError.value = false
     }
-
-
-    
 }
