@@ -5,7 +5,7 @@ configurations {
 
 dependencies {
     ktlint "com.pinterest:ktlint:0.40.0"
-    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.15.0-RC1"
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.9.0"
 }
 
 task ktlint(type: JavaExec, group: "verification") {
@@ -29,11 +29,12 @@ task detektVerification(type: JavaExec, group: "verification") {
 
     main = "io.gitlab.arturbosch.detekt.cli.Main"
     classpath = configurations.detekt
-    ignoreExitValue = true
     def input = "$projectDir"
     def dir = "$rootDir"
     def config = "$dir/detekt-config.yml"
     def report = "xml:$buildDir/reports/detekt/detekt-checkstyle.xml"
     def params = ["-i", input, "-c", config, "-r", report]
     args(params)
+
+    ignoreExitValue = true
 }
