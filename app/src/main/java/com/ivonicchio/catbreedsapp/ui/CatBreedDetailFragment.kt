@@ -76,7 +76,7 @@ class CatBreedDetailFragment : Fragment() {
         setupRequestErrorObserver()
     }
 
-    private fun setupErrorClickListener() {
+    fun setupErrorClickListener() {
         binding.iErrorLayout.setOnClickListener {
             binding.progressBar.visible()
             binding.iErrorLayout.gone()
