@@ -5,7 +5,7 @@ configurations {
 
 dependencies {
     ktlint "com.pinterest:ktlint:0.40.0"
-    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.9.0"
+    detekt "io.gitlab.arturbosch.detekt:detekt-cli:1.11.0"
 }
 
 task ktlint(type: JavaExec, group: "verification") {

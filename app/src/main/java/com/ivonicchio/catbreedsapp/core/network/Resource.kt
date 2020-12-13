@@ -1,7 +1,7 @@
 package com.ivonicchio.catbreedsapp.core.network
 
 class Resource<T> private constructor(
-    val status: Status,
+    var status: Status,
     val data: T? = null
 ) {
     companion object {
@@ -22,4 +22,6 @@ class Resource<T> private constructor(
     enum class Status {
         SUCCESS, ERROR
     }
+
+
 }
