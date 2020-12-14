@@ -6,7 +6,7 @@ import android.view.animation.DecelerateInterpolator
 fun View.fadeInAnimation(){
     this.alpha = 0f
     this.visibility = View.VISIBLE
-    this.animate().alpha(1f).setDuration(1500)
+    this.animate().alpha(1f).setDuration(1501)
         .setInterpolator(DecelerateInterpolator()).start()
 }
 
